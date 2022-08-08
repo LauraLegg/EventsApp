@@ -12,9 +12,9 @@ namespace Data.Models
         public int ItemID { get; }
         public DateTime StartDate { get; }
         public DateTime EndDate { get; }
-        public string Reason { get; }
+        public Reason Reason { get; }
 
-        public Attendance(int PersonID, int EventID, int RoleID, int ItemID, DateTime StartDate, DateTime EndDate, string Reason)
+        public Attendance(int PersonID, int EventID, int RoleID, int ItemID, DateTime StartDate, DateTime EndDate, Reason Reason)
         {
             this.PersonID = PersonID;
             this.EventID = EventID;
